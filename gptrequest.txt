@@ -1,0 +1,136 @@
+ok now when we have that <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather Report</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="l1">Make a report
+                <ul class="dropdown">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="weather-reps.html">Weather Report</a></li>
+                    <li><a href="emergency-reps.html">Emergency Report</a></li>
+                    <li><a href="#">Bug Report</a></li>
+                    <li><a href="#">Suggestion/Improvement</a></li>
+                </ul>
+            </li>
+            <li id="l2">See all reports
+                <ul class="dropdown">
+                    <li><a href="all-weather.html">All Weather Reports</a></li>
+                    <li><a href="all-em.html">All Emergency Reports</a></li>
+                </ul>
+            </li>
+            <li id="l3">Map
+                <ul class="dropdown">
+                    <li><a href="#">Map</a></li>
+                </ul>
+            </li>
+            <li id="l4">Account
+                <ul class="dropdown">
+                    <button>Log out</button>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="time" id="realTime"></div>
+        <div class="weather-report-form">
+            <div class="weather">
+                <h2>Weather Report</h2>
+                <form id="weatherForm">
+                    <label for="weatherType">Select Weather:</label>
+                    <div class="sel-weth-dropdown">
+                        <input type="text" id="weatherTypeInput" placeholder="Select Weather" readonly>
+                        <div class="dropdown-content" id="weatherOptions">
+                            <span data-weather="Wind">Wind</span>
+                            <span data-weather="Rain">Rain</span>
+                            <span data-weather="Hot">Hot</span>
+                            <span data-weather="Warm">Warm</span>
+                            <span data-weather="Cold">Cold</span>
+                            <span data-weather="Snow">Snow</span>
+                            <span data-weather="Tornado Forming">Tornado Forming</span>
+                            <span data-weather="Tornado">Tornado</span>
+                            <span data-weather="Eclipse">Eclipse</span>
+                            <span data-weather="Storm">Storm</span>
+                            <span data-weather="Lightning">Lightning</span>
+                            <span data-weather="Clouds">Clouds</span>
+                            <span data-weather="Sunny">Sunny</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="temp">
+                <h2>Temperature Report</h2>
+                <form id="tempForm">
+                    <label for="tempType">Input Temp:</label>
+                    <div class="sel-weth-dropdown">
+                        <input type="number" id="tempTypeInput" placeholder="Type in &#8451;">
+                    </div>
+                </form>
+            </div>
+            <div class="humidity">
+                <h2>Humidity Report</h2>
+                <form id="humidForm">
+                    <label for="humidType">Input Humidity:</label>
+                    <div class="sel-weth-dropdown">
+                        <input type="number" id="humidTypeInput" placeholder="Type in humidity">
+                    </div>
+                </form>
+            </div>
+            <div class="wind">
+                <h2>Wind Report</h2>
+                <form id="windForm">
+                    <label for="windType">Input Knots:</label>
+                    <div class="sel-weth-dropdown">
+                        <input type="number" id="windTypeInput" placeholder="Type in knots">
+                    </div>
+                </form>
+            </div>
+            <div class="hikers">
+                <h2>
+                    Hikers Report
+                </h2>
+                <form id="hikeForm">
+                    <label for="hikeType">Report any helped hikers:</label>
+                    <br><br>
+                    <div class="sel-weth-dropdown">
+                        <textarea placeholder="Type here..." cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="tress">
+                <h2>
+                    Tresspasser Report
+                </h2>
+                <form id="tressForm">
+                    <label for="tressType">Report any tresspassers:</label>
+                    <br><br>
+                    <div class="sel-weth-dropdown">
+                        <textarea placeholder="Type here..." cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rep-by">
+            <p>
+                Reported by: <input type="text" placeholder="Your Name..." id="userName">
+            </p>
+        </div>
+        <div class="btn">
+            <button class="submit">Submit Report</button>
+        </div>
+    </div>
+    <script src="reports.js"></script>
+</body>
+
+</html>
+
+
+make it upload it as a new report in all-weather.html, like:
