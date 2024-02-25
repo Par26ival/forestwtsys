@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="em.css">
+    <title>Emergency Report</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="l1">Make a report
+                <ul class="dropdown">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="weather-reps.html">Weather Report</a></li>
+                    <li><a href="emergency-reps.html">Emergency Report</a></li>
+                    <li><a href="#">Bug Report</a></li>
+                    <li><a href="#">Suggestion/Improvement</a></li>
+                </ul>
+            </li>
+            <li id="l2">See all reports
+                <ul class="dropdown">
+                    <li><a href="all-weather.html">All Weather Reports</a></li>
+                    <li><a href="all-em.html">All Emergency Reports</a></li>
+                </ul>
+            </li>
+            <li id="l3">Map
+                <ul class="dropdown">
+                    <li><a href="#">Map</a></li>
+                </ul>
+            </li>
+            <li id="l4">Account
+                <ul class="dropdown">
+                    <button>Log out</button>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="time" id="realTime"></div>
+        <div class="date" id="date"></div>
+        <div class="em-report-form">
+            <h1>Emergency Report</h1>
+            <div class="emer">
+                <h2>Type</h2>
+                <form id="typeForm">
+                    <label for="emerType">Emergency Report:</label>
+                    <div class="sel-weth-dropdown">
+                        <input type="text" id="emerTypeInput" placeholder="Select Emergency" readonly>
+                        <div class="dropdown-content" id="typeOptions">
+                            <span type="Climate-Related">Climate-Related</span>
+                            <span type="Entity">Entity</span>
+                            <span type="Meteorological">Meteorological</span>
+                            <span type="Biological">Biological</span>
+                            <span type="Hydrological">Hydrological</span>
+                        </div>
+                    </div>
+                </form>
+                <h2>Location</h2>
+                <form id="locForm">
+                    <label for="emerType">Enter Location:</label>
+                    <div class="sel-weth-dropdown">
+                        <input type="text" id="locTypeInput" placeholder="Select Location" readonly>
+                        <div class="dropdown-content" id="locOptions">
+                            <span loc="Watch Tower 1">Watch Tower 1</span>
+                            <span loc="Watch Tower 2">Watch Tower 2</span>
+                            <span loc="Watch Tower 3">Watch Tower 3</span>
+                            <span loc="Watch Tower 4">Watch Tower 4</span>
+                            <span loc="Watch Tower 5">Watch Tower 5</span>
+                            <span loc="Watch Tower 6">Watch Tower 6</span>
+                            <span loc="Watch Tower 7">Watch Tower 7</span>
+                            <span loc="Watch Tower 8">Watch Tower 8</span>
+                            <span loc="Watch Tower 9">Watch Tower 9</span>
+                            <span loc="Watch Tower 10">Watch Tower 10</span>
+                            <span loc="Watch Tower 11">Watch Tower 11</span>
+                            <span loc="Watch Tower 12">Watch Tower 12</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="submit">Submit Report</button>
+        </div>
+    </div>
+    <script src="em-rep.js"></script>
+</body>
+
+</html>

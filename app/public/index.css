@@ -1,0 +1,133 @@
+* {
+    font-family: 'gg sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a202c;
+    color: #cbd5e0;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 960px;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.7;
+        }
+    }
+}
+
+.login {
+    text-align: center;
+}
+
+.login input {
+    display: block;
+    width: 25%;
+    padding: 1em;
+    border: none;
+    outline: none;
+    background: #2d3748;
+    color: #cbd5e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.login label {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.login input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.login input[type="password"] {
+    margin-top: 1em;
+}
+
+.button-container {
+    margin-top: 5em;
+}
+
+.login button {
+    font-size: 1em;
+    line-height: 1;
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: #f9a64b;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.login button:hover {
+    background: #ec7722;
+}
+
+@media (min-width: 480px) {
+    .login input {
+        width: auto;
+    }
+
+    .login input[type="password"] {
+        float: right;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
