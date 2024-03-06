@@ -132,12 +132,6 @@ nav li#l4 .dropdown {
     overflow: hidden;
 }
 
-@media (max-width:  600px) {
-    .container {
-        max-width: 90vw;
-    }
-}
-
 #report {
     justify-content: center;
     align-items: center;
