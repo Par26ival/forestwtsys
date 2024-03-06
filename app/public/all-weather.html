@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all-weather.css">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js-compat"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js-compat"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js-compat"></script>
+    <title>All Weather Reports</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="l1">Make a report
+                <ul class="dropdown">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="weather-reps.html">Weather Report</a></li>
+                    <li><a href="emergency-reps.html">Emergency Report</a></li>
+                    <li><a href="#">Bug Report</a></li>
+                    <li><a href="#">Suggestion/Improvement</a></li>
+                </ul>
+            </li>
+            <li id="l2">See all reports
+                <ul class="dropdown">
+                    <li><a href="all-weather.html">All Weather Reports</a></li>
+                    <li><a href="all-em.html">All Emergency Reports</a></li>
+                </ul>
+            </li>
+            <li id="l3">Map
+                <ul class="dropdown">
+                    <li><a href="map.html">Map</a></li>
+                </ul>
+            </li>
+            <li id="l4">Account
+                <ul class="dropdown">
+                    <button>Log out</button>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1>All Weather Reports</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div id="report">
+                <h3>Weather Report</h3>
+                <span>Date: 15th March 2024</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
